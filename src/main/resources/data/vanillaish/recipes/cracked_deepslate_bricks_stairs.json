@@ -1,0 +1,17 @@
+{
+  "key": {
+    "#": {
+      "item": "minecraft:cracked_deepslate_bricks"
+    }
+  },
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "item": "vanillaish:cracked_deepslate_bricks_stairs"
+  },
+  "type": "minecraft:crafting_shaped"
+}

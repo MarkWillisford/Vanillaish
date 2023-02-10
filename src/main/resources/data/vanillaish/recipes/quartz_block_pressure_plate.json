@@ -1,0 +1,14 @@
+{
+  "key": {
+    "#": {
+      "item": "minecraft:quartz_block"
+    }
+  },
+  "pattern": [
+    "##"
+  ],
+  "result": {
+    "item": "vanillaish:quartz_block_pressure_plate"
+  },
+  "type": "minecraft:crafting_shaped"
+}

@@ -1,0 +1,17 @@
+{
+  "key": {
+    "#": {
+      "item": "minecraft:chiseled_polished_blackstone"
+    }
+  },
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "item": "vanillaish:chiseled_polished_blackstone_stairs"
+  },
+  "type": "minecraft:crafting_shaped"
+}

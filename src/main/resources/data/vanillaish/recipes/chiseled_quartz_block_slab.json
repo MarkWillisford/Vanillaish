@@ -1,0 +1,15 @@
+{
+  "key": {
+    "#": {
+      "item": "minecraft:chiseled_quartz_block"
+    }
+  },
+  "pattern": [
+    "###"
+  ],
+  "result": {
+    "count": 6,
+    "item": "vanillaish:chiseled_quartz_block_slab"
+  },
+  "type": "minecraft:crafting_shaped"
+}

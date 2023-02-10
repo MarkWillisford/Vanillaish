@@ -1,0 +1,15 @@
+{
+  "key": {
+    "#": {
+      "item": "minecraft:rooted_dirt"
+    }
+  },
+  "pattern": [
+    "###"
+  ],
+  "result": {
+    "count": 6,
+    "item": "vanillaish:rooted_dirt_slab"
+  },
+  "type": "minecraft:crafting_shaped"
+}

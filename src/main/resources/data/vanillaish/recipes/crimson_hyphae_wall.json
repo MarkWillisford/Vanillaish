@@ -1,0 +1,16 @@
+{
+  "key": {
+    "#": {
+      "item": "minecraft:crimson_hyphae"
+    }
+  },
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 6,
+    "item": "vanillaish:crimson_hyphae_wall"
+  },
+  "type": "minecraft:crafting_shaped"
+}

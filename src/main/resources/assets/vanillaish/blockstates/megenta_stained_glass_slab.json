@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "vanillaish:block/megenta_stained_glass_slab"
+    },
+    "type=double": {
+      "model": "minecraft:block/megenta_stained_glass"
+    },
+    "type=top": {
+      "model": "vanillaish:block/megenta_stained_glass_slab_top"
+    }
+  }
+}

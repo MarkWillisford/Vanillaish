@@ -1,0 +1,14 @@
+{
+  "key": {
+    "#": {
+      "item": "vanillaish:polished_granite_bricks"
+    }
+  },
+  "pattern": [
+    "##"
+  ],
+  "result": {
+    "item": "vanillaish:polished_granite_bricks_pressure_plate"
+  },
+  "type": "minecraft:crafting_shaped"
+}

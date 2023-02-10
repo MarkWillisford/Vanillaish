@@ -1,0 +1,15 @@
+{
+  "key": {
+    "#": {
+      "item": "minecraft:purple_stained_glass"
+    }
+  },
+  "pattern": [
+    "###"
+  ],
+  "result": {
+    "count": 6,
+    "item": "vanillaish:purple_stained_glass_slab"
+  },
+  "type": "minecraft:crafting_shaped"
+}

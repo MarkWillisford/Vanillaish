@@ -1,0 +1,16 @@
+{
+  "key": {
+    "#": {
+      "item": "minecraft:blue_terracotta"
+    }
+  },
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 6,
+    "item": "vanillaish:blue_terracotta_wall"
+  },
+  "type": "minecraft:crafting_shaped"
+}

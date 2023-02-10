@@ -1,0 +1,16 @@
+{
+  "key": {
+    "#": {
+      "item": "minecraft:acacia_planks"
+    }
+  },
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 6,
+    "item": "vanillaish:acacia_planks_wall"
+  },
+  "type": "minecraft:crafting_shaped"
+}

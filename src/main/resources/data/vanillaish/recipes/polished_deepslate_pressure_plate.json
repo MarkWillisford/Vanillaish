@@ -1,0 +1,14 @@
+{
+  "key": {
+    "#": {
+      "item": "minecraft:polished_deepslate"
+    }
+  },
+  "pattern": [
+    "##"
+  ],
+  "result": {
+    "item": "vanillaish:polished_deepslate_pressure_plate"
+  },
+  "type": "minecraft:crafting_shaped"
+}

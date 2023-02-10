@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "vanillaish",
+  "version": "${version}",
+
+  "name": "Uncles Vanilla-ish",
+  "description": "This is an example description! Tell everyone what your mod is about!",
+  "authors": [
+    "Uncle Mark"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "MIT",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.unclesgames.vanillaish.Vanillaish"
+    ],
+    "client": [
+      "net.unclesgames.vanillaish.VanillaishClientMod"
+    ]
+  },
+  "mixins": [
+    "vanillaish.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.12.2",
+    "fabric": "*",
+    "minecraft": "1.18.x",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}

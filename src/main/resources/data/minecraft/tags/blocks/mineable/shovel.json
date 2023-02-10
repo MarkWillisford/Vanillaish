@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "vanillaish:dirt_slab",
+    "vanillaish:coarse_dirt_slab",
+    "vanillaish:rooted_dirt_slab"
+  ]
+}

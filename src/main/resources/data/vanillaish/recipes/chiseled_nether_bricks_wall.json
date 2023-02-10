@@ -1,0 +1,16 @@
+{
+  "key": {
+    "#": {
+      "item": "minecraft:chiseled_nether_bricks"
+    }
+  },
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 6,
+    "item": "vanillaish:chiseled_nether_bricks_wall"
+  },
+  "type": "minecraft:crafting_shaped"
+}

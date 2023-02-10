@@ -1,0 +1,16 @@
+{
+  "key": {
+    "#": {
+      "item": "minecraft:dark_oak_planks"
+    }
+  },
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 6,
+    "item": "vanillaish:dark_oak_planks_wall"
+  },
+  "type": "minecraft:crafting_shaped"
+}

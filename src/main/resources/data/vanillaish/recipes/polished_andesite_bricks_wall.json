@@ -1,0 +1,16 @@
+{
+  "key": {
+    "#": {
+      "item": "vanillaish:polished_andesite_bricks"
+    }
+  },
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 6,
+    "item": "vanillaish:polished_andesite_bricks_wall"
+  },
+  "type": "minecraft:crafting_shaped"
+}

@@ -1,0 +1,15 @@
+{
+  "key": {
+    "#": {
+      "item": "minecraft:smooth_basalt"
+    }
+  },
+  "pattern": [
+    "###"
+  ],
+  "result": {
+    "count": 6,
+    "item": "vanillaish:smooth_basalt_slab"
+  },
+  "type": "minecraft:crafting_shaped"
+}

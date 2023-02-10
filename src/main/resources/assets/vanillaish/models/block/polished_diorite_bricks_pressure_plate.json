@@ -1,0 +1,6 @@
+{
+  "parent": "block/pressure_plate_up",
+  "textures": {
+    "texture": "vanillaish:blocks/polished_diorite_bricks"
+  }
+}

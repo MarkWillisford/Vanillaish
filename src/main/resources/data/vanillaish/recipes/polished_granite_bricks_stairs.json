@@ -1,0 +1,17 @@
+{
+  "key": {
+    "#": {
+      "item": "vanillaish:polished_granite_bricks"
+    }
+  },
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "item": "vanillaish:polished_granite_bricks_stairs"
+  },
+  "type": "minecraft:crafting_shaped"
+}

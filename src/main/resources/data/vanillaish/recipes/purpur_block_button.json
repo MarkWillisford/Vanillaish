@@ -1,0 +1,11 @@
+{
+  "ingredients": [
+    {
+      "item": "minecraft:purpur_block"
+    }
+  ],
+  "result": {
+    "item": "vanillaish:purpur_block_button"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

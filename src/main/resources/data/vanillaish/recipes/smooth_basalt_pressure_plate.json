@@ -1,0 +1,14 @@
+{
+  "key": {
+    "#": {
+      "item": "minecraft:smooth_basalt"
+    }
+  },
+  "pattern": [
+    "##"
+  ],
+  "result": {
+    "item": "vanillaish:smooth_basalt_pressure_plate"
+  },
+  "type": "minecraft:crafting_shaped"
+}

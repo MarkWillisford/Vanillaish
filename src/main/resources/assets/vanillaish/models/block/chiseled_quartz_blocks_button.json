@@ -1,0 +1,6 @@
+{
+  "parent": "block/button",
+  "textures": {
+    "texture": ":block/chiseled_quartz_blocks"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "key": {
+    "#": {
+      "item": "minecraft:light_gray_terracotta"
+    }
+  },
+  "pattern": [
+    "###"
+  ],
+  "result": {
+    "count": 6,
+    "item": "vanillaish:light_gray_terracotta_slab"
+  },
+  "type": "minecraft:crafting_shaped"
+}

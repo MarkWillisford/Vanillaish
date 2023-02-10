@@ -1,0 +1,11 @@
+{
+  "ingredients": [
+    {
+      "item": "minecraft:tuff"
+    }
+  ],
+  "result": {
+    "item": "vanillaish:tuff_button"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

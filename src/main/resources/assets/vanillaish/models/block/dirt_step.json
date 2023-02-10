@@ -1,0 +1,7 @@
+{
+  "parent": "vanillaish:block/step",
+  "textures": {
+    "0": "block/dirt",
+    "particle": "block/dirt"
+  }
+}

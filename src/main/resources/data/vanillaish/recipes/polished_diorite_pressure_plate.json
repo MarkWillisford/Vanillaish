@@ -1,0 +1,14 @@
+{
+  "key": {
+    "#": {
+      "item": "minecraft:polished_diorite"
+    }
+  },
+  "pattern": [
+    "##"
+  ],
+  "result": {
+    "item": "vanillaish:polished_diorite_pressure_plate"
+  },
+  "type": "minecraft:crafting_shaped"
+}

@@ -1,0 +1,15 @@
+{
+  "key": {
+    "#": {
+      "item": "minecraft:pink_concrete_powder"
+    }
+  },
+  "pattern": [
+    "###"
+  ],
+  "result": {
+    "count": 6,
+    "item": "vanillaish:pink_concrete_powder_slab"
+  },
+  "type": "minecraft:crafting_shaped"
+}

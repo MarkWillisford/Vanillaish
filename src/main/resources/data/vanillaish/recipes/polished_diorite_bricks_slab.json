@@ -1,0 +1,15 @@
+{
+  "key": {
+    "#": {
+      "item": "vanillaish:polished_diorite_bricks"
+    }
+  },
+  "pattern": [
+    "###"
+  ],
+  "result": {
+    "count": 6,
+    "item": "vanillaish:polished_diorite_bricks_slab"
+  },
+  "type": "minecraft:crafting_shaped"
+}

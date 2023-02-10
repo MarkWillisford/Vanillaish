@@ -1,0 +1,11 @@
+{
+  "ingredients": [
+    {
+      "item": "minecraft:prismarine_bricks"
+    }
+  ],
+  "result": {
+    "item": "vanillaish:prismarine_bricks_button"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

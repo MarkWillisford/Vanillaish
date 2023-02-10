@@ -1,0 +1,15 @@
+{
+  "key": {
+    "#": {
+      "item": "minecraft:cracked_stone_bricks"
+    }
+  },
+  "pattern": [
+    "###"
+  ],
+  "result": {
+    "count": 6,
+    "item": "vanillaish:cracked_stone_bricks_slab"
+  },
+  "type": "minecraft:crafting_shaped"
+}

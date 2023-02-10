@@ -1,0 +1,63 @@
+{
+  "variants": {
+    "orientation=be": {
+      "model": "vanillaish:block/dirt_step",
+      "uvlock": true,
+      "y": 90
+    },
+    "orientation=bn": {
+      "model": "vanillaish:block/dirt_step"
+    },
+    "orientation=bs": {
+      "model": "vanillaish:block/dirt_step",
+      "uvlock": true,
+      "x": 90
+    },
+    "orientation=bw": {
+      "model": "vanillaish:block/dirt_step",
+      "uvlock": true,
+      "y": 270
+    },
+    "orientation=ne": {
+      "model": "vanillaish:block/dirt_step_vertical",
+      "uvlock": true,
+      "y": 90
+    },
+    "orientation=nw": {
+      "model": "vanillaish:block/dirt_step_vertical"
+    },
+    "orientation=se": {
+      "model": "vanillaish:block/dirt_step_vertical",
+      "uvlock": true,
+      "y": 180
+    },
+    "orientation=sw": {
+      "model": "vanillaish:block/dirt_step_vertical",
+      "uvlock": true,
+      "y": 270
+    },
+    "orientation=te": {
+      "model": "vanillaish:block/dirt_step",
+      "uvlock": true,
+      "x": 270,
+      "y": 90
+    },
+    "orientation=tn": {
+      "model": "vanillaish:block/dirt_step",
+      "uvlock": true,
+      "x": 270
+    },
+    "orientation=ts": {
+      "model": "vanillaish:block/dirt_step",
+      "uvlock": true,
+      "x": 270,
+      "y": 180
+    },
+    "orientation=tw": {
+      "model": "vanillaish:block/dirt_step",
+      "uvlock": true,
+      "x": 270,
+      "y": 270
+    }
+  }
+}

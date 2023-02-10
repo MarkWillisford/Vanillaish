@@ -1,0 +1,11 @@
+{
+  "ingredients": [
+    {
+      "item": "minecraft:bricks"
+    }
+  ],
+  "result": {
+    "item": "vanillaish:bricks_button"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

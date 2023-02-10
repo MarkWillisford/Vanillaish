@@ -1,0 +1,15 @@
+{
+  "key": {
+    "#": {
+      "item": "minecraft:white_concrete_powder"
+    }
+  },
+  "pattern": [
+    "###"
+  ],
+  "result": {
+    "count": 6,
+    "item": "vanillaish:white_concrete_powder_slab"
+  },
+  "type": "minecraft:crafting_shaped"
+}

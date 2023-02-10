@@ -1,0 +1,11 @@
+{
+  "ingredients": [
+    {
+      "item": "minecraft:calcite"
+    }
+  ],
+  "result": {
+    "item": "vanillaish:calcite_button"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

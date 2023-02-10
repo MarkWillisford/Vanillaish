@@ -1,0 +1,14 @@
+{
+  "key": {
+    "#": {
+      "item": "minecraft:smooth_quartz"
+    }
+  },
+  "pattern": [
+    "##"
+  ],
+  "result": {
+    "item": "vanillaish:smooth_quartz_pressure_plate"
+  },
+  "type": "minecraft:crafting_shaped"
+}

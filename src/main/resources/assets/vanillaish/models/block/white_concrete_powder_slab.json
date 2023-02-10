@@ -1,0 +1,8 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "bottom": "block/white_concrete_powder",
+    "side": "block/white_concrete_powder",
+    "top": "block/white_concrete_powder"
+  }
+}

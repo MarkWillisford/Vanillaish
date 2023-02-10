@@ -1,0 +1,15 @@
+{
+  "key": {
+    "#": {
+      "item": "vanillaish:cracked_polished_granite_bricks"
+    }
+  },
+  "pattern": [
+    "###"
+  ],
+  "result": {
+    "count": 6,
+    "item": "vanillaish:cracked_polished_granite_bricks_slab"
+  },
+  "type": "minecraft:crafting_shaped"
+}

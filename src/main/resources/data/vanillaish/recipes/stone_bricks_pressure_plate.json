@@ -1,0 +1,14 @@
+{
+  "key": {
+    "#": {
+      "item": "minecraft:stone_bricks"
+    }
+  },
+  "pattern": [
+    "##"
+  ],
+  "result": {
+    "item": "vanillaish:stone_bricks_pressure_plate"
+  },
+  "type": "minecraft:crafting_shaped"
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "vanillaish:blocks/cracked_polished_andesite_bricks"
+  }
+}

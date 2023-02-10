@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "vanillaish:block/framed_glass_slab"
+    },
+    "type=double": {
+      "model": "vanillaish:block/framed_glass"
+    },
+    "type=top": {
+      "model": "vanillaish:block/framed_glass_slab_top"
+    }
+  }
+}

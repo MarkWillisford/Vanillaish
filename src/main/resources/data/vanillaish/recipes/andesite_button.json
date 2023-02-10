@@ -1,0 +1,11 @@
+{
+  "ingredients": [
+    {
+      "item": "minecraft:andesite"
+    }
+  ],
+  "result": {
+    "item": "vanillaish:andesite_button"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

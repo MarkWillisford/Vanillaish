@@ -1,0 +1,11 @@
+{
+  "ingredients": [
+    {
+      "item": "minecraft:polished_diorite"
+    }
+  ],
+  "result": {
+    "item": "vanillaish:polished_diorite_button"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

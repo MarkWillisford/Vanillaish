@@ -1,0 +1,14 @@
+{
+  "key": {
+    "#": {
+      "item": "minecraft:cut_copper"
+    }
+  },
+  "pattern": [
+    "##"
+  ],
+  "result": {
+    "item": "vanillaish:cut_copper_pressure_plate"
+  },
+  "type": "minecraft:crafting_shaped"
+}

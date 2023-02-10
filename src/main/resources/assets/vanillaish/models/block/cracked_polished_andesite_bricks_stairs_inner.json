@@ -1,0 +1,8 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "bottom": "vanillaish:blocks/cracked_polished_andesite_bricks",
+    "side": "vanillaish:blocks/cracked_polished_andesite_bricks",
+    "top": "vanillaish:blocks/cracked_polished_andesite_bricks"
+  }
+}

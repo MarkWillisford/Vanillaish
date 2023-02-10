@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "vanillaish:block/polished_andesite_bricks_pressure_plate"
+    },
+    "powered=true": {
+      "model": "vanillaish:block/polished_andesite_bricks_pressure_plate_down"
+    }
+  }
+}

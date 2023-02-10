@@ -1,0 +1,8 @@
+{
+  "parent": "block/outer_stairs",
+  "textures": {
+    "bottom": "block/megenta_concrete_powder",
+    "side": "block/megenta_concrete_powder",
+    "top": "block/megenta_concrete_powder"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "ingredients": [
+    {
+      "item": "minecraft:cobbled_deepslate"
+    }
+  ],
+  "result": {
+    "item": "vanillaish:cobbled_deepslate_button"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

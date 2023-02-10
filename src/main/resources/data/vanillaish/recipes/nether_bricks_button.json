@@ -1,0 +1,11 @@
+{
+  "ingredients": [
+    {
+      "item": "minecraft:nether_bricks"
+    }
+  ],
+  "result": {
+    "item": "vanillaish:nether_bricks_button"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

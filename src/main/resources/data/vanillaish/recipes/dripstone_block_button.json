@@ -1,0 +1,11 @@
+{
+  "ingredients": [
+    {
+      "item": "minecraft:dripstone_block"
+    }
+  ],
+  "result": {
+    "item": "vanillaish:dripstone_block_button"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

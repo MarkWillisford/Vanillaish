@@ -1,0 +1,11 @@
+{
+  "ingredients": [
+    {
+      "item": "minecraft:smooth_quartz"
+    }
+  ],
+  "result": {
+    "item": "vanillaish:smooth_quartz_button"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

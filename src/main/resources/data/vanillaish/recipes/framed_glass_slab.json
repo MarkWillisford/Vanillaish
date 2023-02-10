@@ -1,0 +1,15 @@
+{
+  "key": {
+    "#": {
+      "item": "vanillaish:framed_glass"
+    }
+  },
+  "pattern": [
+    "###"
+  ],
+  "result": {
+    "count": 6,
+    "item": "vanillaish:framed_glass_slab"
+  },
+  "type": "minecraft:crafting_shaped"
+}

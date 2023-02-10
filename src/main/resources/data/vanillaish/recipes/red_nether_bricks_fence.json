@@ -1,0 +1,20 @@
+{
+  "group": "wooden_fence",
+  "key": {
+    "#": {
+      "item": "minecraft:nether_brick"
+    },
+    "W": {
+      "item": "minecraft:red_nether_bricks"
+    }
+  },
+  "pattern": [
+    "W#W",
+    "W#W"
+  ],
+  "result": {
+    "count": 6,
+    "item": "vanillaish:red_nether_bricks_fence"
+  },
+  "type": "minecraft:crafting_shaped"
+}

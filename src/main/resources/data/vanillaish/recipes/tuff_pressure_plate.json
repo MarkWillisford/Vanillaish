@@ -1,0 +1,14 @@
+{
+  "key": {
+    "#": {
+      "item": "minecraft:tuff"
+    }
+  },
+  "pattern": [
+    "##"
+  ],
+  "result": {
+    "item": "vanillaish:tuff_pressure_plate"
+  },
+  "type": "minecraft:crafting_shaped"
+}

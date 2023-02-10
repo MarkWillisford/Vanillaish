@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "vanillaish:block/megenta_wool_slab"
+    },
+    "type=double": {
+      "model": "minecraft:block/megenta_wool"
+    },
+    "type=top": {
+      "model": "vanillaish:block/megenta_wool_slab_top"
+    }
+  }
+}

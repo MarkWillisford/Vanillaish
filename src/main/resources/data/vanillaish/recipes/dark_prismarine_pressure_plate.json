@@ -1,0 +1,14 @@
+{
+  "key": {
+    "#": {
+      "item": "minecraft:dark_prismarine"
+    }
+  },
+  "pattern": [
+    "##"
+  ],
+  "result": {
+    "item": "vanillaish:dark_prismarine_pressure_plate"
+  },
+  "type": "minecraft:crafting_shaped"
+}

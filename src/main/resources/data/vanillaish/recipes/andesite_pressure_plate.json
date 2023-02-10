@@ -1,0 +1,14 @@
+{
+  "key": {
+    "#": {
+      "item": "minecraft:andesite"
+    }
+  },
+  "pattern": [
+    "##"
+  ],
+  "result": {
+    "item": "vanillaish:andesite_pressure_plate"
+  },
+  "type": "minecraft:crafting_shaped"
+}

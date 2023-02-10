@@ -1,0 +1,8 @@
+{
+  "parent": "block/slab_top",
+  "textures": {
+    "bottom": "vanillaish:blocks/cracked_polished_diorite_bricks",
+    "side": "vanillaish:blocks/cracked_polished_diorite_bricks",
+    "top": "vanillaish:blocks/cracked_polished_diorite_bricks"
+  }
+}

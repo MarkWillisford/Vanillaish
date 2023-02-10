@@ -1,0 +1,11 @@
+{
+  "ingredients": [
+    {
+      "item": "minecraft:polished_granite"
+    }
+  ],
+  "result": {
+    "item": "vanillaish:polished_granite_button"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

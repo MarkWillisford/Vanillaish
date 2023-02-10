@@ -1,0 +1,14 @@
+{
+  "key": {
+    "#": {
+      "item": "minecraft:purpur_block"
+    }
+  },
+  "pattern": [
+    "##"
+  ],
+  "result": {
+    "item": "vanillaish:purpur_block_pressure_plate"
+  },
+  "type": "minecraft:crafting_shaped"
+}

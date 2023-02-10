@@ -1,0 +1,11 @@
+{
+  "ingredients": [
+    {
+      "item": "minecraft:prismarine"
+    }
+  ],
+  "result": {
+    "item": "vanillaish:prismarine_button"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

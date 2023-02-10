@@ -1,0 +1,17 @@
+{
+  "key": {
+    "#": {
+      "item": "minecraft:gray_concrete_powder"
+    }
+  },
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "item": "vanillaish:gray_concrete_powder_stairs"
+  },
+  "type": "minecraft:crafting_shaped"
+}

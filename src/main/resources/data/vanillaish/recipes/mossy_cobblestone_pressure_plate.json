@@ -1,0 +1,14 @@
+{
+  "key": {
+    "#": {
+      "item": "minecraft:mossy_cobblestone"
+    }
+  },
+  "pattern": [
+    "##"
+  ],
+  "result": {
+    "item": "vanillaish:mossy_cobblestone_pressure_plate"
+  },
+  "type": "minecraft:crafting_shaped"
+}

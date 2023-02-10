@@ -1,0 +1,11 @@
+{
+  "ingredients": [
+    {
+      "item": "minecraft:dark_prismarine"
+    }
+  ],
+  "result": {
+    "item": "vanillaish:dark_prismarine_button"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

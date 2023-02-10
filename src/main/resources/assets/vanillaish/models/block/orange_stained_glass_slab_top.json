@@ -1,0 +1,8 @@
+{
+  "parent": "block/slab_top",
+  "textures": {
+    "bottom": "block/orange_stained_glass",
+    "side": "block/orange_stained_glass",
+    "top": "block/orange_stained_glass"
+  }
+}
