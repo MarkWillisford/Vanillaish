@@ -1,0 +1,6 @@
+{
+  "parent": "block/template_wall_side_tall",
+  "textures": {
+    "wall": "vanillaish:blocks/cracked_polished_diorite_bricks"
+  }
+}

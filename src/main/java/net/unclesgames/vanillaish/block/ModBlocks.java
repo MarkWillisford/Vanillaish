@@ -113,9 +113,9 @@ public class ModBlocks {
 
   };
 
-  private static BlockToRegister[] transparentBlocksToRegister = new BlockToRegister[] {
-    new BlockToRegister("OAK_LEAVES", .2F, .2F, Material.LEAVES, new String[] {"carpet", "wall"})
-  };
+//  private static BlockToRegister[] transparentBlocksToRegister = new BlockToRegister[] {
+//    new BlockToRegister("OAK_LEAVES", .2F, .2F, Material.LEAVES, new String[] {"carpet", "wall"})
+//  };
 
   // Oxidizing blocks
   private static String[] oxidizingBlocksLvl1 = new String[]{
