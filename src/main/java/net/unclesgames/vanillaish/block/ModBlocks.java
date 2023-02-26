@@ -189,9 +189,6 @@ public class ModBlocks {
 
     modBlocks.put("DIRT_PATH_SLAB", registerBlock("DIRT_PATH_SLAB".toLowerCase(),
       new ModDirtPathSlabBlock(FabricBlockSettings.of(Material.SOIL).strength(.5f).requiresTool()), ItemGroup.MISC ));
-    modBlocks.put("DIRT_PATH_STAIRS", registerBlock("DIRT_PATH_STAIRS".toLowerCase(),
-      new ModDirtPathStairsBlock(Registry.BLOCK.get(new Identifier("DIRT_PATH_STAIRS".toLowerCase())).getDefaultState(),
-        FabricBlockSettings.of(Material.SOIL).strength(.5f).requiresTool()), ItemGroup.MISC ));
 
     // Grass
     modBlocks.put("GRASS_BLOCK_SLAB", registerBlock("GRASS_BLOCK_SLAB".toLowerCase(),
@@ -201,15 +198,9 @@ public class ModBlocks {
         FabricBlockSettings.of(Material.SOIL).strength(.5f).requiresTool()), ItemGroup.MISC ));
 
     for(String newDirt: gravityBlocks) {
-      String name = newDirt + "_STAIRS";
-      modBlocks.put(name, registerBlock(name.toLowerCase(),
-        new ModGravityStair(Registry.BLOCK.get(new Identifier(newDirt.toLowerCase())).getDefaultState(),
-          FabricBlockSettings.of(Material.SOIL).strength(.5f).requiresTool()), ItemGroup.MISC ));
-
-      name = newDirt + "_SLAB";
+      String name = newDirt + "_SLAB";
       modBlocks.put(name, registerBlock(name.toLowerCase(),
         new ModGravitySlab(FabricBlockSettings.of(Material.SOIL).strength(.5f).requiresTool()), ItemGroup.MISC ));
-
     }
     for(String newBlock: oxidizingBlocksLvl1) {
       String name = newBlock + "_Wall";
