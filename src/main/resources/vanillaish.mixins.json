@@ -4,6 +4,8 @@
   "package": "net.unclesgames.vanillaish.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "HoeMixin",
+    "ShovelMixin"
   ],
   "client": [
     "ExampleMixin"

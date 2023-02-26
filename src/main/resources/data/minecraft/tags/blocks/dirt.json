@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "vanillaish:dirt_slab",
+    "vanillaish:grass_block_slab",
+    "vanillaish:podzol_slab",
+    "vanillaish:coarse_dirt_slab",
+    "vanillaish:mycelium_slab",
+    "vanillaish:rooted_dirt_slab",
+    "vanillaish:moss_block_slab"
+  ]
+}

@@ -21,10 +21,10 @@ public class ModRegistries {
         return view != null && pos != null ? BiomeColors.getGrassColor(view, pos) : GrassColors.getColor(0.5D, 1.0D);
       }
       return -1;
-    }, ModBlocks.modBlocks.get("GRASS_BLOCK_SLAB"), ModBlocks.modBlocks.get("GRASS_BLOCK_STAIRS"));
+    }, ModBlocks.modBlocks.get("GRASS_BLOCK_SLAB"));
 
     ColorProviderRegistry.ITEM.register((stack, tintIndex) -> GrassColors.getColor(0.5D, 1.0D),
-      ModBlocks.modBlocks.get("GRASS_BLOCK_SLAB"), ModBlocks.modBlocks.get("GRASS_BLOCK_STAIRS"));
+      ModBlocks.modBlocks.get("GRASS_BLOCK_SLAB"));
 
 
 //    ColorProviderRegistry.BLOCK.register((state, view, pos, tintIndex) -> {

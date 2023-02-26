@@ -10,8 +10,8 @@ import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
 
-public class ModDirtPathSlabBlock extends SlabBlock {
-  public ModDirtPathSlabBlock(Settings settings) {
+public class DirtPathSlabBlock extends SlabBlock {
+  public DirtPathSlabBlock(Settings settings) {
     super(settings);
   }
   protected static final VoxelShape BOTTOM_SHAPE = Block.createCuboidShape(0.0, 0.0, 0.0, 16.0, 7.0, 16.0);

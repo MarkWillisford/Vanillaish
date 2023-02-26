@@ -3,19 +3,16 @@ package net.unclesgames.vanillaish.block;
 import java.lang.reflect.InvocationTargetException;
 import java.util.HashMap;
 
-import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
-import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.unclesgames.vanillaish.Vanillaish;
 import net.unclesgames.vanillaish.block.custom.*;
-import net.unclesgames.vanillaish.item.ModItemGroup;
 
 public class ModBlocks {
   public static HashMap<String, Block> modBlocks = new HashMap<String, Block>();
@@ -24,7 +21,6 @@ public class ModBlocks {
     "WHITE", "ORANGE", "MAGENTA", "LIGHT_BLUE", "YELLOW", "LIME", "PINK", "GRAY",
     "LIGHT_GRAY", "CYAN", "PURPLE", "BLUE", "BROWN", "GREEN", "RED", "BLACK"
   };
-  private static String[] dirtBlocks = new String[] { "COARSE_DIRT", "DIRT", "ROOTED_DIRT", "PODZOL", "MYCELIUM" };
   private static String[] gravityBlocks = new String[] { "GRAVEL", "SAND", "RED_SAND" };
 
   // These are the one-offs that don't fit in the main loops
@@ -134,17 +130,39 @@ public class ModBlocks {
 
   public static void registerModBlocks() throws NoSuchFieldException, IllegalAccessException,
     NoSuchMethodException, InvocationTargetException {
-    // a few dirt blocks; stairs and slabs
+    // Dirt Slabs
+    // grass and dirt get hoed into farmland
+    modBlocks.put("DIRT_SLAB", registerBlock("dirt_slab",
+      new ToFarmlandSlabBlock(FabricBlockSettings.copy(Blocks.DIRT)), ItemGroup.MISC ));;
+    modBlocks.put("GRASS_BLOCK_SLAB", registerBlock("grass_block_slab",
+      new ToFarmlandSlabBlock(FabricBlockSettings.copy(Blocks.GRASS_BLOCK)), ItemGroup.MISC ));
+    // rooted dirt and coarse dirt are hoed into dirt while rooted dirt drops hanging roots
+    modBlocks.put("PODZOL_SLAB", registerBlock("podzol_slab",
+      new ToDirtPathSlabBlock(FabricBlockSettings.copy(Blocks.PODZOL)), ItemGroup.MISC ));
+    modBlocks.put("MYCELIUM_SLAB", registerBlock("mycelium_slab",
+      new ToDirtPathSlabBlock(FabricBlockSettings.copy(Blocks.MYCELIUM)), ItemGroup.MISC ));
+    modBlocks.put("COARSE_DIRT_SLAB", registerBlock("coarse_dirt_slab",
+      new ToDirtPathSlabBlock(FabricBlockSettings.copy(Blocks.COARSE_DIRT)), ItemGroup.MISC ));
+    modBlocks.put("ROOTED_DIRT_SLAB", registerBlock("rooted_dirt_slab",
+      new ToDirtPathSlabBlock(FabricBlockSettings.copy(Blocks.ROOTED_DIRT)), ItemGroup.MISC ));
+
+    modBlocks.put("FARMLAND_SLAB", registerBlock("farmland_slab",
+      new FarmlandSlabBlock(FabricBlockSettings.copy(Blocks.FARMLAND)), ItemGroup.MISC ));
+    modBlocks.put("DIRT_PATH_SLAB", registerBlock("DIRT_PATH_SLAB".toLowerCase(),
+      new DirtPathSlabBlock(FabricBlockSettings.of(Material.SOIL).strength(.5f).requiresTool()), ItemGroup.MISC ));
+
+    // Dirt Stairs
+    modBlocks.put("DIRT_STAIRS", registerBlock("dirt_stairs",
+      new ModStairsBlock(Registry.BLOCK.get(new Identifier("dirt_stairs")).getDefaultState(),
+        FabricBlockSettings.copy(Blocks.DIRT)), ItemGroup.MISC ));
+
+
+    String[] dirtBlocks = new String[] { "COARSE_DIRT", "ROOTED_DIRT" };
     for(String newDirt: dirtBlocks) {
       String name = newDirt + "_STAIRS";
       modBlocks.put(name, registerBlock(name.toLowerCase(),
         new ModStairsBlock(Registry.BLOCK.get(new Identifier(newDirt.toLowerCase())).getDefaultState(),
           FabricBlockSettings.of(Material.SOIL).strength(.5f).requiresTool()), ItemGroup.MISC ));
-
-      name = newDirt + "_SLAB";
-      modBlocks.put(name, registerBlock(name.toLowerCase(),
-        new SlabBlock(FabricBlockSettings.of(Material.SOIL).strength(.5f).requiresTool()), ItemGroup.MISC ));
-
     }
     modBlocks.put("MOSS_BLOCK_STAIRS", registerBlock("moss_block_stairs",
       new ModStairsBlock(Registry.BLOCK.get(new Identifier("moss_block")).getDefaultState(),
@@ -184,32 +202,10 @@ public class ModBlocks {
     modBlocks.put("FRAMED_GLASS_WALL", registerBlock("framed_glass_wall",
       new WallBlock(FabricBlockSettings.of(Material.GLASS).strength(0.3f).requiresTool().nonOpaque()), ItemGroup.MISC ));
 
-
-
-
-    modBlocks.put("DIRT_PATH_SLAB", registerBlock("DIRT_PATH_SLAB".toLowerCase(),
-      new ModDirtPathSlabBlock(FabricBlockSettings.of(Material.SOIL).strength(.5f).requiresTool()), ItemGroup.MISC ));
-    modBlocks.put("DIRT_PATH_STAIRS", registerBlock("DIRT_PATH_STAIRS".toLowerCase(),
-      new ModDirtPathStairsBlock(Registry.BLOCK.get(new Identifier("DIRT_PATH_STAIRS".toLowerCase())).getDefaultState(),
-        FabricBlockSettings.of(Material.SOIL).strength(.5f).requiresTool()), ItemGroup.MISC ));
-
-    // Grass
-    modBlocks.put("GRASS_BLOCK_SLAB", registerBlock("GRASS_BLOCK_SLAB".toLowerCase(),
-      new SlabBlock(FabricBlockSettings.of(Material.SOIL).strength(.5f).requiresTool()), ItemGroup.MISC ));
-    modBlocks.put("GRASS_BLOCK_STAIRS", registerBlock("GRASS_BLOCK_STAIRS".toLowerCase(),
-      new ModStairsBlock(Registry.BLOCK.get(new Identifier("GRASS_BLOCK_STAIRS".toLowerCase())).getDefaultState(),
-        FabricBlockSettings.of(Material.SOIL).strength(.5f).requiresTool()), ItemGroup.MISC ));
-
     for(String newDirt: gravityBlocks) {
-      String name = newDirt + "_STAIRS";
-      modBlocks.put(name, registerBlock(name.toLowerCase(),
-        new ModGravityStair(Registry.BLOCK.get(new Identifier(newDirt.toLowerCase())).getDefaultState(),
-          FabricBlockSettings.of(Material.SOIL).strength(.5f).requiresTool()), ItemGroup.MISC ));
-
-      name = newDirt + "_SLAB";
+      String name = newDirt + "_SLAB";
       modBlocks.put(name, registerBlock(name.toLowerCase(),
         new ModGravitySlab(FabricBlockSettings.of(Material.SOIL).strength(.5f).requiresTool()), ItemGroup.MISC ));
-
     }
     for(String newBlock: oxidizingBlocksLvl1) {
       String name = newBlock + "_Wall";
