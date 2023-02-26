@@ -5,8 +5,7 @@ import net.minecraft.block.Blocks;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemUsageContext;
-import net.minecraft.text.LiteralText;
-import net.minecraft.text.TranslatableText;
+import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.math.BlockPos;
 
@@ -26,7 +25,7 @@ public class DowsingRodItem extends Item {
 
       for(int i=positionClicked.getY(); i>=(-64); i--) {
         Block blockBelow = context.getWorld().getBlockState(positionClicked.withY(i)).getBlock();
-        player.sendMessage(new LiteralText("checking " + i + ", found " + blockBelow.asItem().getName().getString()), false);
+        player.sendMessage(Text.literal("checking " + i + ", found " + blockBelow.asItem().getName().getString()), false);
 
         if(isValuableBlock(blockBelow)) {
           outputValuableCoordinates(positionClicked.withY(i), player, blockBelow);
@@ -36,7 +35,7 @@ public class DowsingRodItem extends Item {
       }
 
       if(!foundBlock) {
-        player.sendMessage(new TranslatableText("item.vanillaish.dowsing_rod.no_valuables"), false);
+        player.sendMessage(Text.literal("item.vanillaish.dowsing_rod.no_valuables"), false);
       }
     }
 
@@ -48,7 +47,7 @@ public class DowsingRodItem extends Item {
   }
 
   private void outputValuableCoordinates(BlockPos blockPos, PlayerEntity player, Block blockBelow) {
-    player.sendMessage(new LiteralText("Found " + blockBelow.asItem().getName().getString() + " at " +
+    player.sendMessage(Text.literal("Found " + blockBelow.asItem().getName().getString() + " at " +
       "(" + blockPos.getX() + ", " + blockPos.getY() + "," + blockPos.getZ() + ")"), false);
   }
 
