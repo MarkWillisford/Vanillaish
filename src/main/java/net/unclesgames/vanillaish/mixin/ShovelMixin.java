@@ -19,7 +19,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(ShovelItem.class)
 public abstract class ShovelMixin {
-  @Inject(method = "useOnBlock", at = @At("RETURN"))
+  @Inject(method = "useOnBlock", at = @At("RETURN"), cancellable = true)
   protected void injectUseOnBlockMethod(ItemUsageContext context, CallbackInfoReturnable<ActionResult> cbir) {
     World world = context.getWorld();
     BlockPos blockPos = context.getBlockPos();
@@ -37,7 +37,7 @@ public abstract class ShovelMixin {
           });
         }
       }
-//      cbir.setReturnValue(ActionResult.success(world.isClient));
+      cbir.setReturnValue(ActionResult.success(world.isClient));
     } else {
       cbir.setReturnValue(ActionResult.PASS);
     }

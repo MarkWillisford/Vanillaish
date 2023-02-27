@@ -4,7 +4,9 @@ import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.HoeItem;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsageContext;
+import net.minecraft.item.Items;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.ActionResult;
@@ -19,7 +21,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(HoeItem.class)
 public abstract class HoeMixin {
-  @Inject(method = "useOnBlock", at = @At("RETURN"))
+  @Inject(method = "useOnBlock", at = @At("RETURN"), cancellable = true)
   protected void injectUseOnBlockMethod(ItemUsageContext context, CallbackInfoReturnable<ActionResult> cbir) {
     World world = context.getWorld();
     BlockPos blockPos = context.getBlockPos();
@@ -37,7 +39,22 @@ public abstract class HoeMixin {
           });
         }
       }
-//      cbir.setReturnValue(ActionResult.success(world.isClient));
+      cbir.setReturnValue(ActionResult.success(world.isClient));
+    } else if (state.getBlock() == ModBlocks.modBlocks.get("ROOTED_DIRT_SLAB") || state.getBlock() == ModBlocks.modBlocks.get("COARSE_DIRT_SLAB")) {
+      PlayerEntity playerEntity = context.getPlayer();
+      world.playSound(playerEntity, blockPos, SoundEvents.ITEM_HOE_TILL, SoundCategory.BLOCKS, 1.0F, 1.0F);
+      world.setBlockState(blockPos, ModBlocks.modBlocks.get("DIRT_SLAB").getStateWithProperties(state));
+      if (!world.isClient) {
+        if (state.getBlock() == ModBlocks.modBlocks.get("ROOTED_DIRT_SLAB")) {
+          Block.dropStack(world, blockPos, context.getSide(), new ItemStack(Items.HANGING_ROOTS));
+        }
+        if (playerEntity != null) {
+          context.getStack().damage(1, playerEntity, (p) -> {
+            p.sendToolBreakStatus(context.getHand());
+          });
+        }
+      }
+      cbir.setReturnValue(ActionResult.success(world.isClient));
     } else {
       cbir.setReturnValue(ActionResult.PASS);
     }
